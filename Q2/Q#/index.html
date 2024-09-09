@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dummy Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-large">
+            <a href="#home">Home</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="navbar-small">
+            <select id="navbar-select" onchange="navigateToSection()">
+                <option value="">Select Section</option>
+                <option value="#home">Home</option>
+                <option value="#education">Education</option>
+                <option value="#skills">Skills</option>
+                <option value="#projects">Projects</option>
+                <option value="#contact">Contact</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home" class="section">
+        <img src="C:\Users\sr197\OneDrive\Desktop\assignment\media\media\Q2\Q#\img\images.png" alt="Home Image">
+        <div class="section-content">
+            <h2>Home</h2>
+            <p>Welcome to my portfolio! This is a sample portfolio demonstrating a responsive layout with a navbar and five sections.</p>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <img src="C:\Users\sr197\OneDrive\Desktop\assignment\media\media\Q2\Q#\img\download.jpeg" alt="Education Image">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>I have completed my degree in Computer Science from XYZ University with a focus on web development and software engineering.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <img src="C:\Users\sr197\OneDrive\Desktop\assignment\media\media\Q2\Q#\img\download (3).jpeg" alt="Skills Image">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <p>Proficient in HTML, CSS, JavaScript, React, Node.js, and Python. I have hands-on experience in creating responsive web applications.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <img src="C:\Users\sr197\OneDrive\Desktop\assignment\media\media\Q2\Q#\img\images.png" alt="Projects Image">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <p>Worked on various projects such as an online bookstore system, dynamic task management application, and a movie search application.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <img src="C:\Users\sr197\OneDrive\Desktop\assignment\media\media\Q2\Q#\img\download (3).jpeg" alt="Contact Image">
+        <div class="section-content">
+            <h2>Contact</h2>
+            <p>If you would like to connect, please feel free to reach out via email at example@example.com.</p>
+        </div>
+    </section>
+
+    <script>
+        function navigateToSection() {
+            const select = document.getElementById('navbar-select');
+            const sectionId = select.value;
+            if (sectionId) {
+                window.location.href = sectionId;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Section layout - for large screens */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.section-content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Navbar select for small/medium screens */
+.navbar-small {
+    display: none;
+    width: 100%;
+    padding: 10px;
+}
+
+#navbar-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Media Queries for responsiveness */
+
+/* Medium and Small Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .navbar-large {
+        display: none;
+    }
+
+    .navbar-small {
+        display: block;
+    }
+}
+
+/* Small Screens (max-width: 600px) */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .section-content {
+        padding: 10px;
+    }
+}
